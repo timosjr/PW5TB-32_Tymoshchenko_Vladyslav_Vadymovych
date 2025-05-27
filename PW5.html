@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Веб калькулятор</title>
+    <script src="PW5.js"></script>
+    <link rel="stylesheet" href="PW5_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-main">
+            <h2 class="section-title">Завдання 1</h2>
+            <div class="form">
+                <label for="PL110KVOmegaVal">ПЛ-110 кВ:</label>
+                <input type="text" id="PL110KVOmegaVal">
+
+                <label for="T110KVOmegaVal">Т-110 кВ:</label>
+                <input type="text" id="T110KVOmegaVal">
+
+                <label for="V110KVOmegaVal">V-110 кВ:</label>
+                <input type="text" id="V110KVOmegaVal">
+
+                <label for="V10KVOmegaVal">V-10 кВ (малооливний):</label>
+                <input type="text" id="V10KVOmegaVal">
+
+                <label for="tiresOmegaVal">Збірні шини 10кВ на 1 приєднання:</label>
+                <input type="text" id="tiresOmegaVal">
+
+                <label for="PL110KVTviVal">ПЛ-110 кВ:</label>
+                <input type="text" id="PL110KVTviVal">
+
+                <label for="T110KVTviVal">Т-110 кВ:</label>
+                <input type="text" id="T110KVTviVal">
+
+                <label for="V110KVTviVal">V-110 кВ:</label>
+                <input type="text" id="V110KVTviVal">
+
+                <label for="V10KVTviVal">V-10 кВ:</label>
+                <input type="text" id="V10KVTviVal">
+
+                <label for="tiresTviVal">Збірні шини 10кВ на 1 приєднання:</label>
+                <input type="text" id="tiresTviVal">
+
+                <label for="PlannedKMaxVal">kmax:</label>
+                <input type="text" id="PlannedKMaxVal">
+
+                <button id="button__first" class="button-first">Обрахувати</button>
+            </div>
+            <div class="result">
+                <h3 class="section-title">Результати</h3>
+                <table>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Результат</th>
+                    </tr>
+                    <tr>
+                        <td>Частота відмов одноколової системи</td>
+                        <td id="OmegaSumVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Середня тривалість відновлення</td>
+                        <td id="tvosVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Коефіцієнт аварійного простою одноколової системи</td>
+                        <td id="kaosVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Коефіцієнт планового простою одноколової системи</td>
+                        <td id="kposVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Частота відмов одночасно двох кіл двоколової системи</td>
+                        <td id="DKOmega"></td>
+                    </tr>
+                    <tr>
+                        <td>Частота відмов двоколової системи з урахуванням секційного вимикача</td>
+                        <td id="DSOmega"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container-main">
+            <h2 class="section-title">Завдання 2</h2>
+            <div class="form">
+                <label for="ZperAVal">Зпер.а:</label>
+                <input type="text" id="ZperAVal">
+
+                <label for="ZperPVal">Зпер.п:</label>
+                <input type="text" id="ZperPVal">
+
+                <label for="OmegaVal">ω:</label>
+                <input type="text" id="OmegaVal">
+
+                <label for="tvVal">tв:</label>
+                <input type="text" id="tvVal">
+
+                <label for="kpVal">kп:</label>
+                <input type="text" id="kpVal">
+
+                <label for="PmVal">Pм:</label>
+                <input type="text" id="PmVal">
+
+                <label for="TmVal">Tм:</label>
+                <input type="text" id="TmVal">
+
+                <button id="button__second" class="button-second">Обрахувати</button>
+            </div>
+            <div class="result">
+                <h3 class="section-title">Результати</h3>
+                <table>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Результат</th>
+                    </tr>
+                    <tr>
+                        <td>Математичне сподівання аварійного недовідпущення електроенергії</td>
+                        <td id="WnedaVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Математичне сподівання планового недовідпущення електроенергії</td>
+                        <td id="WnedpVal"></td>
+                    </tr>
+                    <tr>
+                        <td>Математичне сподівання збитків від переривання електропостачання</td>
+                        <td id="ZperVal"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
